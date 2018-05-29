@@ -1,6 +1,68 @@
 
-<%= render 'shared/navbar' %>
+<div class="container1">
+  <div class="productTitle">
 
+  <h1>hello this is the bike page</h1>
+    <div class="card" style='background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path @bike.photo %>)'>
+    </div>
+  </div>
+</div>
+
+<% bikes = [{size: "XL", price_per_day: 20, neighborhood: "meguro", description: "not new"}, ] %>
+
+<div class="container2">
+  <div class="card" style='background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path @bike.photo %>)'>
+    <% bikes.each do |bike| %>
+      <div class="card-size">
+        <p><%= bike[:size] %></p>
+      </div>
+      <div class="card-neighborhood-and-description">
+        <h2> <%= bike[:neighborhood] %> </h2>
+        <p> <%= bike[:description] %> </p>
+      </div>
+      <div class="card-price">
+        <h2><%= bike[:price_per_day] %></td></h2>
+      </div>
+    <% end %>
+  </div>
+  <div class="btn btn-primary btn-lg">
+    Rent this Bike
+  </div>
+</div>
+
+
+
+<!-- <div class="bike_container1">
+<div class="productPage">
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-3 col-md-6 productPage_productWsDetails">
+      <div class="productPage__productWsDetailsImage">
+        <div class="c
+        ard" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="productPage_productWsDetailsContent">
+      <div class="productPage__productWsDetailsPricing">
+        Price per day
+      </div>
+      <div class="productPage__productWsDetailsLocation">
+        Location
+      </div>
+      <div class="productPage__productWsDetailsSize">
+        Size
+      </div>
+      <div class="productPage__productWsDescription">
+        Description + Text Box
+      </div>
+    </div>
+  </div>
+</div>
+</div> -->
+
+
+<!--
 <div class="productPage">
   <div class="row">
     <div class="col-md-5 productPage_productWithDetails">
@@ -30,4 +92,4 @@
     </div>
   </div>
 </div>
-
+ -->

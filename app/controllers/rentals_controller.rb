@@ -8,7 +8,7 @@ class RentalsController < ApplicationController
     @rental.bike = Bike.find(params[:bike_id])
     @rental.user = current_user
     if @rental.save
-      redirect_to rental_confirmation_path(@rental)
+      redirect_to rentals_path
     else
       render :new
     end
@@ -17,6 +17,7 @@ class RentalsController < ApplicationController
   def destroy
     @rental = Rental.find(params[:id])
     @rental.destroy
+    redirect_to rentals_path
   end
 
   private

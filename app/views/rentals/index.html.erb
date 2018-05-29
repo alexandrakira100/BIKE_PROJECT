@@ -1,13 +1,35 @@
-<div class="banner">
+<div class="rental-banner">
   <h1>Thank you! Your booking is confirmed!</h1>
-   <h2>Find your bike detials below!</h2>
-
+  <h2>Find all your active rentals below!</h2>
 </div>
 
-<div class="container">
+<div class="container all-rentals">
   <% @rentals.each do |rental| %>
-    <li> <%= link_to rental.start_date, rental_path(rental) %></li>
-    <%= link_to 'Delete this rental', rental_path(rental), method: :delete %>
+
+  <div class="container rental">
+      <% if rental.user == current_user  %>
+      <div class="rental-photo">
+    <ul style="list-style-type:none">
+    <li><%=  image_tag(rental.bike.photo, width: '200px') %></li>
+    </div>
+      <div class="rental-details">
+<ul style="list-style-type:none">
+    <li><%=rental.bike.description%></li>
+    <li> Start Date: <%= rental.nice_start_date %></li>
+    <li> End Date: <%=rental.nice_end_date %></li>
+    </div>
+
+
+
+    <ul style="list-style-type:none"><li><%= link_to 'Delete this rental', rental_path(rental), method: :delete, class: "btn btn_primary" %></li>
+       </ul>
+        </div>
   <% end %>
-</div>
+ <% end %>
+  <%= link_to 'Rent more bikes', bikes_path, class: "btn btn_danger button"%>
+ </div>
+
+
+
+
 

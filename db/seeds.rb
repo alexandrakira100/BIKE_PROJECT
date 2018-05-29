@@ -23,9 +23,16 @@ Bike.create(description: 'Pink city cruiser',
 
 bike = Bike.first
 
-r = Rental.create(
+  Rental.create(
   bike: Bike.last,
   user: User.first,
-  start_date: Time.now,
-  end_date: Time.now)
+  start_date: Date.yesterday,
+  end_date: Date.today)
+
+  Rental.create(
+  bike: Bike.first,
+  user: User.first,
+  start_date: Date.yesterday,
+  end_date: Date.today)
+
 

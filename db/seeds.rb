@@ -5,25 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-# Bike.create( description: 'New off-road bike',
-#   neighborhood: 'Meguro',
-#   price_per_day: 10,
-#   size: 1,
-#   basket: false,
-#   photo: 'bike1.jpeg')
-
-user = User.first
-
-Bike.create(description: 'Pink city cruiser',
-  neighborhood: 'Shibuya',
-  price_per_day: 12,
-  size: 2,
-  basket: true,
-  user: user,
-  photo: 'bike2.jpeg')
-
-Bike.create(description: 'Pink city cruiser',
+b = Bike.create( description: 'New off-road bike',
+  user: User.first,
   neighborhood: 'Meguro',
   price_per_day: 48,
   size: 2,
@@ -68,5 +51,14 @@ Bike.create(description: 'Pink city cruiser',
   price_per_day: 63,
   size: 2,
   basket: true,
-  user: user,
-  photo: 'bike.png')
+  photo: 'https://images.unsplash.com/photo-1507150080056-79542bdb9c59?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3439d3b29c7dfe0ab707999921341009&auto=format&fit=crop&w=750&q=80')
+
+
+bike = Bike.first
+
+r = Rental.create(
+  bike: Bike.last,
+  user: User.first,
+  start_date: Time.now,
+  end_date: Time.now)
+

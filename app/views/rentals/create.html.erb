@@ -1,0 +1,14 @@
+<div class="banner">
+  <h1>Thank you! Your booking is confirmed!</h1>
+   <h2>Find your bike detials below!</h2>
+
+
+</div>
+
+<div class="container">
+        <% @rentals.each do |rental| %>
+        <li> <%= link_to bike.rental.description, rental_path(rental) %></li>
+        <% end %>
+    </div>
+
+<% link_to 'Delete this rental', rental_path[:id], method: :delete %>

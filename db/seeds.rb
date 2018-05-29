@@ -5,8 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+user = User.first
+
 b = Bike.create( description: 'New off-road bike',
-  user: User.first,
   neighborhood: 'Meguro',
   price_per_day: 48,
   size: 2,
@@ -51,6 +52,7 @@ Bike.create(description: 'Pink city cruiser',
   price_per_day: 63,
   size: 2,
   basket: true,
+  user: user,
   photo: 'https://images.unsplash.com/photo-1507150080056-79542bdb9c59?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3439d3b29c7dfe0ab707999921341009&auto=format&fit=crop&w=750&q=80')
 
 

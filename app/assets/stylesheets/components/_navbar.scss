@@ -22,6 +22,22 @@
   border-radius: 50%;
 }
 
+/* button */
+
+.btn-medium {
+  color: #999999;
+  border: 1px solid #999999;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+}
+.btn-medium:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: #999999;
+}
+
 /* Right section */
 .navbar-wagon-right {
   display: flex;
@@ -42,7 +58,7 @@
 }
 .navbar-wagon-link:hover {
   color: #da552f;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* Dropdown menu */

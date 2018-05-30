@@ -21,25 +21,30 @@
   background-position: center;
   color: white;
   position: relative;
+  border-radius: 22px;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .bike-name h2 {
   margin-bottom: 0px;
+  font-size: 30px;
 }
 
 .bike-price h2 {
-  margin-top: 2px;
-  font-size: 18px;
+  margin-top: 1px;
+  font-size: 20px;
 }
 
 .bike-neighborhood h2 {
-  font-size: 24px
+  font-size: 20px;
+  margin-bottom: 10px;
 
 }
 
 
 .bike-size h2 {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
@@ -50,7 +55,7 @@
 
 .fullprice h2 {
   margin-top: 2px;
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: line-through;
   color: #8A786E
 }
@@ -67,6 +72,19 @@
   opacity: 1;
   text-decoration: none;
   color: #EB5E55;
+}
+
+.form-group {
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  margin: 1px;
+}
+
+.button_bike {
+  margin-top: 30px;
+  background-color: grey;
+  color: white;
 }
 
 // .card-price {

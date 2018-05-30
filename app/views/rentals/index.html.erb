@@ -7,7 +7,6 @@
   <% @rentals.each do |rental| %>
 
   <div class="container rental">
-      <% if rental.user == current_user  %>
       <div class="rental-photo">
     <ul style="list-style-type:none">
     <li><%=  image_tag(rental.bike.photo, width: '200px') %></li>
@@ -25,7 +24,6 @@
        </ul>
         </div>
   <% end %>
- <% end %>
   <%= link_to 'Rent more bikes', bikes_path, class: "btn btn_danger button"%>
  </div>
 

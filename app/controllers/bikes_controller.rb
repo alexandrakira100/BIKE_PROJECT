@@ -7,6 +7,7 @@ class BikesController < ApplicationController
   end
 
   def show
+    @rental = Rental.new
   end
 
   def new
@@ -19,7 +20,7 @@ class BikesController < ApplicationController
     if @bike.save
       redirect_to bike_path(@bike)
     else
-      render :new
+      render "bikes/show"
     end
   end
 

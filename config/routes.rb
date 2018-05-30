@@ -3,6 +3,11 @@ Rails.application.routes.draw do
   get 'pages/rent'
   get 'pages/profile'
   get 'pages/search'
+  get 'pages/add'
+  get 'pages/about'
+  get 'pages/rent'
+  get 'pages/profile'
+  get 'pages/search'
   get 'pages/about'
   get 'pages/rent'
   get 'pages/profile'
@@ -19,4 +24,5 @@ Rails.application.routes.draw do
   get "rent", to: "pages#rent"
   get "profile", to: "pages#profile"
   get "search", to: "pages#search"
+  get "add", to: "pages#add"
 end

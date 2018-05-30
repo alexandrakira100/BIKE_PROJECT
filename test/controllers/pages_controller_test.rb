@@ -21,4 +21,9 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get add" do
+    get pages_add_url
+    assert_response :success
+  end
+
 end

@@ -14,8 +14,8 @@
 }
 
 
-.card {
-  height: 175px;
+.individual_card {
+  height: 400px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   background-position: center;
@@ -23,32 +23,78 @@
   position: relative;
 }
 
-.card-price {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 40px;
+.bike-name h2 {
+  margin-bottom: 0px;
 }
 
-.card-size {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 15px;
-  text-transform: uppercase;
+.bike-price h2 {
+  margin-top: 2px;
+  font-size: 18px;
 }
 
-.card-neighborhood-and-description {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
+.bike-neighborhood h2 {
+  font-size: 24px
+
 }
-.card-neighborhood-and-description h2 {
+
+
+.bike-size h2 {
   font-size: 24px;
+  margin-bottom: 10px;
 }
-.card-neighborhood-and-description p {
-  font-size: 14px;
-  opacity: 0.7;
+
+.bike-description p {
+  color: #8A786E;
+  font-size: 20px;
+}
+
+.fullprice h2 {
+  margin-top: 2px;
+  font-size: 18px;
+  text-decoration: line-through;
+  color: #8A786E
+}
+
+.rent-btn-medium {
+  color: #EB5E55;
+  border: 1px solid #EB5E55;
+  padding: 10px 15px;
+  border-radius: 50px;
   font-weight: lighter;
+  opacity: 0.6;
 }
+.rent-btn-medium:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: #EB5E55;
+}
+
+// .card-price {
+//   position: absolute;
+//   right: 10px;
+//   top: 10px;
+//   width: 40px;
+// }
+
+// .card-size {
+//   position: absolute;
+//   top: 10px;
+//   left: 10px;
+//   font-size: 15px;
+//   text-transform: uppercase;
+// }
+
+// .card-neighborhood-and-description {
+//   position: absolute;
+//   bottom: 10px;
+//   left: 10px;
+// }
+// .card-neighborhood-and-description h2 {
+//   font-size: 24px;
+// }
+// .card-neighborhood-and-description p {
+//   font-size: 14px;
+//   opacity: 0.7;
+//   font-weight: lighter;
+// }
 

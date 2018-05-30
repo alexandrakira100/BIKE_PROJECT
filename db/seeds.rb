@@ -5,49 +5,51 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-user = User.first
+user = User.create!( name: 'Sara',
+  email: 'sara@hello.com',
+  password: "123456")
 
-b = Bike.create( description: 'New off-road bike',
+b = Bike.create!( description: 'New off-road bike',
   neighborhood: 'Meguro',
   price_per_day: 48,
   size: 2,
   basket: true,
   user: user,
-  photo: 'bike3.jpeg')
+  photo: 'bike3.jpg')
 
-Bike.create(description: 'Pink city cruiser',
+Bike.create!(description: 'Pink city cruiser',
   neighborhood: 'Roppongi',
   price_per_day: 720,
   size: 2,
   basket: false,
   user: user,
-  photo: 'bike4.jpeg')
+  photo: 'bike4.jpg')
 
-Bike.create(description: 'Pink city cruiser',
+Bike.create!(description: 'Pink city cruiser',
   neighborhood: 'Shinjuku',
   price_per_day: 71,
   size: 2,
   basket: true,
   user: user,
-  photo: 'bike5.jpeg')
+  photo: 'bike5.jpg')
 
-Bike.create(description: 'Pink city cruiser',
+Bike.create!(description: 'Pink city cruiser',
   neighborhood: 'Shibuya',
   price_per_day: 53,
   size: 2,
   basket: false,
   user: user,
-  photo: 'bike6.jpeg')
+  photo: 'bike6.jpg')
 
-Bike.create(description: 'Pink city cruiser',
+Bike.create!(description: 'Pink city cruiser',
   neighborhood: 'Shinjuku',
   price_per_day: 44,
   size: 2,
   basket: false,
   user: user,
-  photo: 'bike7.jpeg')
+  photo: 'bike7.jpg')
 
-Bike.create(description: 'Pink city cruiser',
+Bike.create!(description: 'Pink city cruiser',
   neighborhood: 'Meguro',
   price_per_day: 63,
   size: 2,
@@ -58,13 +60,13 @@ Bike.create(description: 'Pink city cruiser',
 
 bike = Bike.first
 
-  Rental.create(
+  Rental.create!(
   bike: Bike.last,
   user: User.first,
   start_date: Date.yesterday,
   end_date: Date.today)
 
-  Rental.create(
+  Rental.create!(
   bike: Bike.first,
   user: User.first,
   start_date: Date.yesterday,

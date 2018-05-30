@@ -5,4 +5,5 @@ class Bike < ApplicationRecord
   enum size: [:small, :medium, :large]
   validates :size, presence: true
   validates :price_per_day, presence: true
+
 end

@@ -26,11 +26,12 @@
       <div class="bike-description">
         <p> <%= @bike.description %> </p>
       </div>
-      <div class="rent-btn-medium">
 
-        <%= link_to "Rent this Bike", rentals_path %>
-      </div>
+      <%= render "rentals/form" %>
+      <!-- <div class="rent-btn-medium">
 
+
+      </div> -->
     </div>
   </div>
 </div>

@@ -39,7 +39,7 @@ Bike.create!(description: 'Pink city cruiser',
   size: 2,
   basket: false,
   user: user,
-  photo: 'bike6.jpeg')
+  photo: 'bike6.jpg')
 
 Bike.create!(description: 'Pink city cruiser',
   neighborhood: 'Shinjuku',

@@ -1,14 +1,6 @@
 
 
-
-    <!-- <div class="card" style='background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path @bike.photo %>)'>
-    </div>
-  </div>
-</div> -->
-
-<% bikes = [{size: "5'7 - 6'1", price_per_day: 20, neighborhood: "Meguro", description: "An excellent way to see Tokyo without contributing to the endangering of the planet for your grandchildren's grandchildren"}, ] %>
-
-<% bikes.each do |bike| %>
+<% @bikes.each do |bike| %>
 <div class="productPage">
   <div class="row">
     <div class="col-md-6 container 1">
@@ -23,16 +15,16 @@
         <div class="fullprice">
           <h2>1500¥</h2>
         </div>
-        <h2><%= bike[:price_per_day] %>¥</h2>
+        <h2><%= @bike.price_per_day %>¥</h2>
       </div>
       <div class="bike-neighborhood">
-        <h2>Neighborhood: <%= bike[:neighborhood] %> </h2>
+        <h2>Neighborhood: <%= @bike.neighborhood %> </h2>
       </div>
       <div class="bike-size">
-        <h2>Bike Size: <%= bike[:size] %></h2>
+        <h2>Bike Size: <%= @bike.size %></h2>
       </div>
       <div class="bike-description">
-        <p> <%= bike[:description] %> </p>
+        <p> <%= @bike.description %> </p>
       </div>
       <div class="rent-btn-medium">
         Rent this Bike

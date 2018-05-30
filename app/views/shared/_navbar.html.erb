@@ -7,13 +7,23 @@
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-    <a href="" class="navbar-wagon-item navbar-wagon-link">ABOUT US</a>
+<!--     <a href="" class="navbar-wagon-item navbar-wagon-link">ABOUT US</a>
     <a href="" class="navbar-wagon-item navbar-wagon-link">RENT A BIKE</a>
     <a href="" class="navbar-wagon-item navbar-wagon-link">ADD A BIKE</a>
-    <a href="" class="navbar-wagon-item navbar-wagon-link">YOUR PROFILE</a>
-    <a href="#" class="btn-medium">SEARCH BIKES</a>
-
-
+    <a href="" class="navbar-wagon-item navbar-wagon-link">YOUR PROFILE</a> -->
+    <div >
+      <%= link_to "ABOUT US", about_path, class:"navbar-wagon-item navbar-wagon-link" %>
+    </div>
+    <div >
+      <%= link_to "RENT A BIKE", rent_path, class:"navbar-wagon-item navbar-wagon-link" %>
+    </div>
+    <div >
+      <%= link_to "YOUR PROFILE", profile_path, class:"navbar-wagon-item navbar-wagon-link"  %>
+    </div>
+    <div>
+      <%= link_to "SEARCH BIKES", search_path, class:"btn-medium" %>
+    <!-- <a href="#" class="btn-medium">SEARCH BIKES</a> -->
+    </div>
     <!-- Profile picture with dropdown list -->
     <div class="navbar-wagon-item">
       <div class="dropdown">

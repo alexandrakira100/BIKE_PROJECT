@@ -5,19 +5,54 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+user = User.first
+
 b = Bike.create( description: 'New off-road bike',
-  user: User.first,
   neighborhood: 'Meguro',
-  price_per_day: 10,
-  size: 1,
+  price_per_day: 48,
+  size: 2,
+  basket: true,
+  user: user,
+  photo: 'bike3.jpeg')
+
+Bike.create(description: 'Pink city cruiser',
+  neighborhood: 'Roppongi',
+  price_per_day: 720,
+  size: 2,
   basket: false,
-  photo: 'https://images.unsplash.com/photo-1484144709249-a643e3720d13?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=09a47f6cde9a3102a94b4e7d5b90b420&auto=format&fit=crop&w=790&q=80')
+  user: user,
+  photo: 'bike4.jpeg')
+
+Bike.create(description: 'Pink city cruiser',
+  neighborhood: 'Shinjuku',
+  price_per_day: 71,
+  size: 2,
+  basket: true,
+  user: user,
+  photo: 'bike5.jpeg')
 
 Bike.create(description: 'Pink city cruiser',
   neighborhood: 'Shibuya',
-  price_per_day: 12,
+  price_per_day: 53,
+  size: 2,
+  basket: false,
+  user: user,
+  photo: 'bike6.jpeg')
+
+Bike.create(description: 'Pink city cruiser',
+  neighborhood: 'Shinjuku',
+  price_per_day: 44,
+  size: 2,
+  basket: false,
+  user: user,
+  photo: 'bike7.jpeg')
+
+Bike.create(description: 'Pink city cruiser',
+  neighborhood: 'Meguro',
+  price_per_day: 63,
   size: 2,
   basket: true,
+  user: user,
   photo: 'https://images.unsplash.com/photo-1507150080056-79542bdb9c59?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3439d3b29c7dfe0ab707999921341009&auto=format&fit=crop&w=750&q=80')
 
 

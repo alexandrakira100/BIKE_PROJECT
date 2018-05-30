@@ -15,7 +15,7 @@ b = Bike.create!( description: 'New off-road bike',
   size: 2,
   basket: true,
   user: user,
-  photo: 'bike3.jpeg')
+  photo: 'bike3.jpg')
 
 Bike.create!(description: 'Pink city cruiser',
   neighborhood: 'Roppongi',
@@ -23,7 +23,7 @@ Bike.create!(description: 'Pink city cruiser',
   size: 2,
   basket: false,
   user: user,
-  photo: 'bike4.jpeg')
+  photo: 'bike4.jpg')
 
 Bike.create!(description: 'Pink city cruiser',
   neighborhood: 'Shinjuku',
@@ -31,7 +31,7 @@ Bike.create!(description: 'Pink city cruiser',
   size: 2,
   basket: true,
   user: user,
-  photo: 'bike5.jpeg')
+  photo: 'bike5.jpg')
 
 Bike.create!(description: 'Pink city cruiser',
   neighborhood: 'Shibuya',
@@ -47,7 +47,7 @@ Bike.create!(description: 'Pink city cruiser',
   size: 2,
   basket: false,
   user: user,
-  photo: 'bike7.jpeg')
+  photo: 'bike7.jpg')
 
 Bike.create!(description: 'Pink city cruiser',
   neighborhood: 'Meguro',

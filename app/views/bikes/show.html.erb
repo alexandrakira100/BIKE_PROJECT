@@ -1,10 +1,10 @@
 
 
-<% @bikes.each do |bike| %>
+
 <div class="productPage">
   <div class="row">
     <div class="col-md-6 container 1">
-      <div class="card" style='background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path @bike.photo %>)'>
+      <div class="individual_card" style='background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path @bike.photo %>)'>
       </div>
     </div>
     <div class="col-md-6 container2">
@@ -27,12 +27,14 @@
         <p> <%= @bike.description %> </p>
       </div>
       <div class="rent-btn-medium">
-        Rent this Bike
+
+        <%= link_to "Rent this Bike", rentals_path %>
       </div>
+
     </div>
   </div>
 </div>
-<% end %>
+
 
 
 

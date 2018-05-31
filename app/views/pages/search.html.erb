@@ -3,29 +3,55 @@
   <form>
     <fieldset>
       <legend><span class="number">🚲</span> Bicycle specifications</legend>
-      <input type="text" name="field1" placeholder="Your Name *">
-      <input type="email" name="field2" placeholder="Your Email *">
-      <div class="normal-container">
-        <div class="smile-rating-container">
-          <div class="smile-rating-toggle-container">
-            <form class="submit-rating">
-              <input id="meh"  name="satisfaction" type="radio" />
-              <input id="fun" name="satisfaction" type="radio" />
-              <label for="meh" class="rating-label rating-label-meh">No</label>
-              <div class="smile-rating-toggle"></div>
 
-              <div class="rating-eye rating-eye-left"></div>
-              <div class="rating-eye rating-eye-right"></div>
-
-              <div class="mouth rating-eye-bad-mouth"></div>
-
-              <div class="toggle-rating-pill"></div>
-              <label for="fun" class="rating-label rating-label-fun">Yes</label>
-            </form>
-          </div>
+      <form class="form">
+        <div class="inputGroup">
+          <input id="radio1" name="radio" type="radio"/>
+          <label for="radio1">BASKET</label>
         </div>
-      </div>
-      <textarea name="field3" placeholder="About yourself"></textarea>
+        <div class="inputGroup">
+          <input id="radio2" name="radio" type="radio"/>
+          <label for="radio2">NO BASKET</label>
+        </div>
+      </form>
+
+      <div style="max-width: 600px; margin: 24px auto;">
+
+      <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+
+      <DIV>
+        <P>
+          <P>
+          </P>
+        </P>
+      </DIV>
+
+
+      <h1>Size </h1>
+      <select id="job" name="field4" placeholder= "-">
+          <option value="Kids">Kids</option>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+      </select>
+
+            <option value="Kids">500 ¥</option>
+            <option value="Small">1000 ¥</option>
+            <option value="Medium">1500 ¥</option>
+            <option value="Large">2000 ¥</option>
+          </optgroup>
+        </select>
+        <select id="job" name="field4" placeholder= "MAX">
+          <optgroup label="MAX">
+            <option value="Kids"></option>
+            <option value="Kids">2500 ¥</option>
+            <option value="Large">3000 ¥</option>
+            <option value="Small">3500 ¥</option>
+            <option value="Medium">4000 ¥</option>
+          </optgroup>
+        </select>
+
+
       <legend><span class="number">🚲</span>Area to collect bike</legend>
       <!-- <label for="job">Interests:</label> -->
       <select id="job" name="field4">
@@ -33,22 +59,12 @@
           <option value="Shinjuku">Shinjuku</option>
           <option value="Ginza">Ginza</option>
           <option value=" Omotesando"> Omotesando</option>
-          <option value=" Odaiba"> Odaiba</option>
-          <option value="Akihabara">Akihabara</option>
           <option value="Asakusa">Asakusa</option>
           <option value="Harajuku">Harajuku</option>
-          <option value="Shimbashi">Shimbashi</option>
-          <option value="Ikebukuro">Ikebukuro</option>
-          <option value="Ebisu">Ebisu</option>
-          <option value="Yoyogi">Yoyogi</option>
-          <option value="Nakameguro">Nakameguro</option>
           <option value="Meguro">Meguro</option>
       </select>
     </fieldset>
-    <fieldset>
-      <legend><span class="number">🚲</span>Area to collect bike</legend>
-      <textarea name="field3" placeholder="About Your School"></textarea>
-    </fieldset>
+
     <input type="submit" value="Search" />
   </form>
 </div>

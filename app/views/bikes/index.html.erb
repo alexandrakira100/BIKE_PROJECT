@@ -5,6 +5,7 @@
         <%= link_to bike_path(bike.id) do %>
           <div class="card <%= bike.available_now? ? "available-bike" : "unavailable-bike" %>" style='background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path bike.photo %>)'>
             <div class="card-category"></div>
+
             <div class="card-description">
               <h2> <%= bike.price_per_day %>¥ </h2>
               <p> <%= bike.description %> </p>

@@ -5,6 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Rental.destroy_all
+Bike.destroy_all
+User.destroy_all
+
 user = User.create!( name: 'Sara',
   email: 'sara@hello.com',
   password: "123456")
@@ -15,7 +19,8 @@ b = Bike.create!( description: 'New off-road bike',
   size: 2,
   basket: true,
   user: user,
-  photo: 'bike3.jpg')
+  remote_photo_url: "./app/assets/images/bike.png"
+  )
 
 Bike.create!(description: 'Pink city cruiser',
   neighborhood: 'Roppongi',
@@ -23,7 +28,7 @@ Bike.create!(description: 'Pink city cruiser',
   size: 2,
   basket: false,
   user: user,
-  photo: 'bike4.jpg')
+  remote_photo_url: './app/assets/images/bike4.jpg')
 
 Bike.create!(description: 'Pink city cruiser',
   neighborhood: 'Shinjuku',
@@ -31,7 +36,7 @@ Bike.create!(description: 'Pink city cruiser',
   size: 2,
   basket: true,
   user: user,
-  photo: 'bike5.jpg')
+  remote_photo_url: './app/assets/images/bike5.jpg')
 
 Bike.create!(description: 'Pink city cruiser',
   neighborhood: 'Shibuya',
@@ -39,7 +44,7 @@ Bike.create!(description: 'Pink city cruiser',
   size: 2,
   basket: false,
   user: user,
-  photo: 'bike6.jpg')
+  remote_photo_url: './app/assets/images/bike6.jpg')
 
 Bike.create!(description: 'Pink city cruiser',
   neighborhood: 'Shinjuku',
@@ -47,7 +52,7 @@ Bike.create!(description: 'Pink city cruiser',
   size: 2,
   basket: false,
   user: user,
-  photo: 'bike7.jpg')
+  remote_photo_url: './app/assets/images/bike7.jpg')
 
 Bike.create!(description: 'Pink city cruiser',
   neighborhood: 'Meguro',
@@ -55,7 +60,7 @@ Bike.create!(description: 'Pink city cruiser',
   size: 2,
   basket: true,
   user: user,
-  photo: 'https://images.unsplash.com/photo-1507150080056-79542bdb9c59?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3439d3b29c7dfe0ab707999921341009&auto=format&fit=crop&w=750&q=80')
+  remote_photo_url: 'https://images.unsplash.com/photo-1507150080056-79542bdb9c59?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3439d3b29c7dfe0ab707999921341009&auto=format&fit=crop&w=750&q=80')
 
 
 bike = Bike.first

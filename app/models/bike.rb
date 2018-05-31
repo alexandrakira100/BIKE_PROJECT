@@ -7,6 +7,10 @@ class Bike < ApplicationRecord
   enum neighborhood: [:Ginza, :Ochanomizu, :Ueno, :Ikebukuro, :Shinjuku, :Shibuya, :Meguro, :Haneda, :Roppongi, :Daiba, :Asakusa]
   validates :size, presence: true
   validates :price_per_day, presence: true
+  
+  NEIGHBOURHOODS = ["Shibuya", "Shinjuku", "Ginza", "Omotesando", "Asakusa", "Harajuku", "Meguro"]
+  PRICE_CHOICES = [500, 1000, 1500, 2000, 2500, 3000, 3500]
+
   validates :neighborhood, presence: true
   # validates :pickup_address, presence: true
   has_many :rentals
@@ -19,4 +23,3 @@ class Bike < ApplicationRecord
     rentals.where("start_date < ? OR end_date > ?", (rental_start_date), (rental_end_date)).empty?
   end
 end
-

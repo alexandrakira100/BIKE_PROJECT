@@ -1,5 +1,7 @@
 //= require rails-ujs
 //= require_tree .
+//= require bootstrap-datepicker
+
 const unavailableBikes = document.querySelectorAll(".unavailable-bike");
 console.log(unavailableBikes)
 unavailableBikes.forEach((bike) => {

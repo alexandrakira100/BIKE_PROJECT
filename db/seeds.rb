@@ -14,7 +14,7 @@ user = User.create!( name: 'Sara',
   password: "123456")
 
 b = Bike.create!( description: 'New off-road bike',
-  neighborhood: 'Meguro',
+  neighborhood: 0,
   price_per_day: 48,
   size: 2,
   basket: true,
@@ -23,7 +23,7 @@ b = Bike.create!( description: 'New off-road bike',
   )
 
 Bike.create!(description: 'Pink city cruiser',
-  neighborhood: 'Roppongi',
+  neighborhood: 1,
   price_per_day: 720,
   size: 2,
   basket: false,
@@ -31,7 +31,7 @@ Bike.create!(description: 'Pink city cruiser',
   remote_photo_url: './app/assets/images/bike4.jpg')
 
 Bike.create!(description: 'Pink city cruiser',
-  neighborhood: 'Shinjuku',
+  neighborhood: 2,
   price_per_day: 71,
   size: 2,
   basket: true,
@@ -39,7 +39,7 @@ Bike.create!(description: 'Pink city cruiser',
   remote_photo_url: './app/assets/images/bike5.jpg')
 
 Bike.create!(description: 'Pink city cruiser',
-  neighborhood: 'Shibuya',
+  neighborhood: 3,
   price_per_day: 53,
   size: 2,
   basket: false,
@@ -47,7 +47,7 @@ Bike.create!(description: 'Pink city cruiser',
   remote_photo_url: './app/assets/images/bike6.jpg')
 
 Bike.create!(description: 'Pink city cruiser',
-  neighborhood: 'Shinjuku',
+  neighborhood: 4,
   price_per_day: 44,
   size: 2,
   basket: false,
@@ -55,7 +55,7 @@ Bike.create!(description: 'Pink city cruiser',
   remote_photo_url: './app/assets/images/bike7.jpg')
 
 Bike.create!(description: 'Pink city cruiser',
-  neighborhood: 'Meguro',
+  neighborhood: 5,
   price_per_day: 63,
   size: 2,
   basket: true,

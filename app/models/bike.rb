@@ -18,8 +18,7 @@ class Bike < ApplicationRecord
   after_validation :geocode, if: :will_save_change_to_pickup_address?
 
   NEIGHBOURHOODS = ["Shibuya", "Shinjuku", "Ginza", "Omotesando", "Asakusa", "Harajuku", "Meguro"]
-  PRICE_CHOICES = [500, 1000, 1500, 2000, 2500, 3000, 3500]
-
+  PRICE_CHOICES = [100, 250, 500, 700, 1000]
 
   def available_now?
     rentals.where("start_date < ? OR end_date > ?", Time.current, Time.current).empty?

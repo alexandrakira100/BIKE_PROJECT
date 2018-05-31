@@ -10,10 +10,11 @@ class Bike < ApplicationRecord
   has_many :rentals
 
   def available_now?
-    rentals.where("start_date < ? OR end_date > ?", (Time.now), (Time.now)).empty?
+    rentals.where("start_date < ? OR end_date > ?", Time.current, Time.current).empty?
   end
 
   def available?(rental_start_date, rental_end_date)
     rentals.where("start_date < ? OR end_date > ?", (rental_start_date), (rental_end_date)).empty?
   end
 end
+

@@ -6,7 +6,12 @@
   color: white;
   position: relative;
   margin: 30px;
+  &.unavailable-bike {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
 }
+
 .card-user {
   position: absolute;
   right: 10px;

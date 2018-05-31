@@ -15,18 +15,21 @@
 
         <legend><span class="number">2</span> ADD PHOTO OF BICYCLE</legend>
         <h2>Photo of your bike</h2>
-        <div class="form-gruoup">
-          <%= f.input :photo,label: false %>
+        <div class="form-group">
+          <%= f.input :photo %>
+          <%= f.input :photo_cache, as: :hidden %>
         </div>
         <legend><span class="number">3</span> LOCATION DESCRIPTION</legend>
         <h2>Neighborhood</h2>
         <div class="form-group">
           <%= f.input :neighborhood, collection: Bike::NEIGHBOURHOODS,label: false %>
         </div>
+        
         <h2>Short description of precise location</h2>
         <div class="form-group">
           <%= f.input :description, as: :text,label: false %>
         </div>
+
         <%= f.submit "ADD", class: "btn btn-primary" %>
       <% end %>
 </div>

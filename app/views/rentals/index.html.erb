@@ -9,7 +9,8 @@
   <div class="container rental">
       <div class="rental-photo">
     <ul style="list-style-type:none">
-    <li><%=  image_tag(rental.bike.photo, width: '200px') %></li>
+    <li><%= cl_image_tag(rental.bike.photo, width: '200px') %></li>
+
     </div>
       <div class="rental-details">
 <ul style="list-style-type:none">

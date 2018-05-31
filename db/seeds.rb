@@ -13,49 +13,65 @@ user = User.create!( name: 'Sara',
   email: 'sara@hello.com',
   password: "123456")
 
+def reduce_speed_to_avoid_api_limit
+  puts "waiting to prevent hitting API limit"
+  sleep 3
+end
+
 b = Bike.create!( description: 'New off-road bike',
   neighborhood: 0,
+  pickup_address: "Shibuya, Tokyo, Japan",
   price_per_day: 48,
   size: 2,
   basket: true,
   user: user,
   remote_photo_url: "./app/assets/images/bike.png"
   )
+reduce_speed_to_avoid_api_limit
 
 Bike.create!(description: 'Pink city cruiser',
   neighborhood: 1,
+  pickup_address: "Shinjuku, Tokyo, Japan",
   price_per_day: 720,
   size: 2,
   basket: false,
   user: user,
   remote_photo_url: './app/assets/images/bike4.jpg')
+reduce_speed_to_avoid_api_limit
 
 Bike.create!(description: 'Pink city cruiser',
   neighborhood: 2,
+  pickup_address: "Ginza,Tokyo, Japan",
   price_per_day: 71,
   size: 2,
   basket: true,
   user: user,
   remote_photo_url: './app/assets/images/bike5.jpg')
+reduce_speed_to_avoid_api_limit
 
 Bike.create!(description: 'Pink city cruiser',
   neighborhood: 3,
+  pickup_address: "Omotesando, Tokyo, Japan",
   price_per_day: 53,
   size: 2,
   basket: false,
   user: user,
   remote_photo_url: './app/assets/images/bike6.jpg')
+reduce_speed_to_avoid_api_limit
 
 Bike.create!(description: 'Pink city cruiser',
   neighborhood: 4,
+  pickup_address: "Asakusa, Tokyo, Japan",
   price_per_day: 44,
   size: 2,
   basket: false,
   user: user,
   remote_photo_url: './app/assets/images/bike7.jpg')
+reduce_speed_to_avoid_api_limit
 
 Bike.create!(description: 'Pink city cruiser',
   neighborhood: 5,
+  pickup_address: "Harajuku, Tokyo, Japan",
   price_per_day: 63,
   size: 2,
   basket: true,

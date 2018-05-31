@@ -3,8 +3,8 @@
     <% @bikes.each do |bike| %>
       <div class="col-xs-12 col-sm-4">
         <%= link_to bike_path(bike.id) do %>
-        <%= if available_now? %>
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= bike.photo.nil? ? ActionController::Base.helpers.asset_path("bike6.jpeg") : image_path(bike.photo)%>)">
+         <%= if available_now? %>
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= bike.photo.nil? ? image_path("bike6.jpeg") : image_path(bike.photo)%>)">
             <div class="card-category"> </div>
             <div class="card-description">
               <h2> <%= bike.price_per_day %>¥ </h2>

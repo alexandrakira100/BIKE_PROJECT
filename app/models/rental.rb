@@ -1,4 +1,4 @@
-class Rental < ApplicationRecord
+  class Rental < ApplicationRecord
   belongs_to :user
   belongs_to :bike
   validates :start_date, presence: true

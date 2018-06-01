@@ -15,14 +15,14 @@ user = User.create!( name: 'Sara',
 
 b = Bike.create!( description: 'New off-road bike',
   neighborhood: 0,
-  price_per_day: 48,
+  price_per_day: 500,
   size: 2,
   basket: true,
   user: user,
   remote_photo_url: "./app/assets/images/bike.png"
   )
 
-Bike.create!(description: 'Pink city cruiser',
+Bike.create!(description: 'City Cruiser',
   neighborhood: 1,
   price_per_day: 720,
   size: 2,
@@ -30,37 +30,109 @@ Bike.create!(description: 'Pink city cruiser',
   user: user,
   remote_photo_url: './app/assets/images/bike4.jpg')
 
-Bike.create!(description: 'Pink city cruiser',
+Bike.create!(description: 'Great for city-riding',
   neighborhood: 2,
-  price_per_day: 71,
+  price_per_day: 600,
   size: 2,
   basket: true,
   user: user,
   remote_photo_url: './app/assets/images/bike5.jpg')
 
-Bike.create!(description: 'Pink city cruiser',
+Bike.create!(description: 'Compact City Bike',
   neighborhood: 3,
-  price_per_day: 53,
+  price_per_day: 1000,
   size: 2,
   basket: false,
   user: user,
   remote_photo_url: './app/assets/images/bike6.jpg')
 
-Bike.create!(description: 'Pink city cruiser',
+Bike.create!(description: 'Excellent for crowded city roads',
   neighborhood: 4,
-  price_per_day: 44,
+  price_per_day: 750,
   size: 2,
   basket: false,
   user: user,
   remote_photo_url: './app/assets/images/bike7.jpg')
 
-Bike.create!(description: 'Pink city cruiser',
+Bike.create!(description: 'For safe bike rides in the city',
   neighborhood: 5,
-  price_per_day: 63,
+  price_per_day: 500,
   size: 2,
   basket: true,
   user: user,
   remote_photo_url: 'https://images.unsplash.com/photo-1507150080056-79542bdb9c59?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3439d3b29c7dfe0ab707999921341009&auto=format&fit=crop&w=750&q=80')
+
+Bike.create!(description: 'City Explorer',
+  neighborhood: 1,
+  price_per_day: 400,
+  size: 2,
+  basket: false,
+  user: user,
+  remote_photo_url: './app/assets/images/bike4.jpg')
+
+Bike.create!(description: 'Brand new bicycle - excellent condition',
+  neighborhood: 2,
+  price_per_day: 800,
+  size: 2,
+  basket: true,
+  user: user,
+  remote_photo_url: './app/assets/images/bike5.jpg')
+
+Bike.create!(description: 'Very smooth handlebar action',
+  neighborhood: 3,
+  price_per_day: 700,
+  size: 2,
+  basket: false,
+  user: user,
+  remote_photo_url: './app/assets/images/bike6.jpg')
+
+Bike.create!(description: 'Sporty model',
+  neighborhood: 4,
+  price_per_day: 650,
+  size: 2,
+  basket: false,
+  user: user,
+  remote_photo_url: './app/assets/images/bike7.jpg')
+
+Bike.create!(description: 'Great way to see the city sights',
+  neighborhood: 1,
+  price_per_day: 720,
+  size: 2,
+  basket: false,
+  user: user,
+  remote_photo_url: './app/assets/images/bike4.jpg')
+
+Bike.create!(description: 'For sporty users',
+  neighborhood: 2,
+  price_per_day: 500,
+  size: 2,
+  basket: true,
+  user: user,
+  remote_photo_url: './app/assets/images/bike5.jpg')
+
+Bike.create!(description: 'Tokyo Explorer',
+  neighborhood: 3,
+  price_per_day: 100,
+  size: 2,
+  basket: false,
+  user: user,
+  remote_photo_url: './app/assets/images/bike6.jpg')
+
+Bike.create!(description: 'Classic bike with super-lightweight frame',
+  neighborhood: 4,
+  price_per_day: 400,
+  size: 2,
+  basket: false,
+  user: user,
+  remote_photo_url: './app/assets/images/bike7.jpg')
+
+Bike.create!(description: 'Classic bike design',
+  neighborhood: 4,
+  price_per_day: 600,
+  size: 2,
+  basket: false,
+  user: user,
+  remote_photo_url: './app/assets/images/bike7.jpg')
 
 
 bike = Bike.first

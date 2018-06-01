@@ -8,6 +8,10 @@ class BikesController < ApplicationController
 
   def show
     @rental = Rental.new
+    @markers = [ {
+      lat: @bike.latitude,
+      lng: @bike.longitude
+    } ]
   end
 
   def new
@@ -40,7 +44,7 @@ class BikesController < ApplicationController
   private
 
   def bike_params
-    params.require(:bike).permit(:size, :basket, :price_per_day, :neighborhood, :description, :photo)
+    params.require(:bike).permit(:size, :basket, :price_per_day, :neighborhood, :description, :photo, :pickup_address)
   end
 
   def set_bike

@@ -21,7 +21,6 @@ class Bike < ApplicationRecord
   NEIGHBOURHOODS = ["Shibuya", "Shinjuku", "Ginza", "Omotesando", "Asakusa", "Harajuku", "Meguro"]
   PRICE_CHOICES = [100, 250, 500, 700, 1000]
 
-
   def available_now?
     rentals.where("start_date < ? OR end_date > ?", Time.current, Time.current).empty?
   end

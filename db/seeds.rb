@@ -46,6 +46,8 @@ Bike.create!(description: 'Compact City Bike',
   user: user,
   remote_photo_url: './app/assets/images/bike6.jpg')
 
+
+  
 Bike.create!(description: 'Excellent for crowded city roads',
   neighborhood: 4,
   price_per_day: 750,

@@ -1,16 +1,4 @@
 Rails.application.routes.draw do
-  get 'pages/about'
-  get 'pages/rent'
-  get 'pages/profile'
-  get 'pages/search'
-  get 'pages/add'
-  get 'pages/about'
-  get 'pages/rent'
-  get 'pages/profile'
-  get 'pages/search'
-  get 'pages/about'
-  get 'pages/rent'
-  get 'pages/profile'
   devise_for :users
   root to: 'bikes#index'
 
@@ -19,6 +7,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   end
   resources :rentals, only: [:index, :destroy]
+  get "my_bikes", to: "owner_bikes#index"
 
   get "about", to: "pages#about"
   get "rent", to: "pages#rent"
@@ -26,3 +15,4 @@ Rails.application.routes.draw do
   get "search", to: "pages#search"
   get "add", to: "pages#add"
 end
+

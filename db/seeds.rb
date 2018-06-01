@@ -5,57 +5,62 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Rental.destroy_all
+Bike.destroy_all
+User.destroy_all
+
 user = User.create!( name: 'Sara',
   email: 'sara@hello.com',
   password: "123456")
 
 b = Bike.create!( description: 'New off-road bike',
-  neighborhood: 'Meguro',
+  neighborhood: 0,
   price_per_day: 48,
   size: 2,
   basket: true,
   user: user,
-  photo: 'bike3.jpg')
+  remote_photo_url: "./app/assets/images/bike.png"
+  )
 
 Bike.create!(description: 'Pink city cruiser',
-  neighborhood: 'Roppongi',
+  neighborhood: 1,
   price_per_day: 720,
   size: 2,
   basket: false,
   user: user,
-  photo: 'bike4.jpg')
+  remote_photo_url: './app/assets/images/bike4.jpg')
 
 Bike.create!(description: 'Pink city cruiser',
-  neighborhood: 'Shinjuku',
+  neighborhood: 2,
   price_per_day: 71,
   size: 2,
   basket: true,
   user: user,
-  photo: 'bike5.jpg')
+  remote_photo_url: './app/assets/images/bike5.jpg')
 
 Bike.create!(description: 'Pink city cruiser',
-  neighborhood: 'Shibuya',
+  neighborhood: 3,
   price_per_day: 53,
   size: 2,
   basket: false,
   user: user,
-  photo: 'bike6.jpg')
+  remote_photo_url: './app/assets/images/bike6.jpg')
 
 Bike.create!(description: 'Pink city cruiser',
-  neighborhood: 'Shinjuku',
+  neighborhood: 4,
   price_per_day: 44,
   size: 2,
   basket: false,
   user: user,
-  photo: 'bike7.jpg')
+  remote_photo_url: './app/assets/images/bike7.jpg')
 
 Bike.create!(description: 'Pink city cruiser',
-  neighborhood: 'Meguro',
+  neighborhood: 5,
   price_per_day: 63,
   size: 2,
   basket: true,
   user: user,
-  photo: 'https://images.unsplash.com/photo-1507150080056-79542bdb9c59?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3439d3b29c7dfe0ab707999921341009&auto=format&fit=crop&w=750&q=80')
+  remote_photo_url: 'https://images.unsplash.com/photo-1507150080056-79542bdb9c59?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3439d3b29c7dfe0ab707999921341009&auto=format&fit=crop&w=750&q=80')
 
 
 bike = Bike.first

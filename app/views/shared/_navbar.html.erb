@@ -12,22 +12,23 @@
     <a href="" class="navbar-wagon-item navbar-wagon-link">ADD A BIKE</a>
     <a href="" class="navbar-wagon-item navbar-wagon-link">YOUR PROFILE</a> -->
     <div >
-      <%= link_to "SEARCH BIKES", bikes_path, class:"navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "BROWSE BIKES", bikes_path, class:"navbar-wagon-item navbar-wagon-link" %>
     </div>
     <div >
       <%= link_to "YOUR RENTALS", rentals_path, class:"navbar-wagon-item navbar-wagon-link" %>
     </div>
-    <div >
-      <%= link_to "YOUR PROFILE", profile_path, class:"navbar-wagon-item navbar-wagon-link"  %>
-    </div>
     <div>
-      <%= link_to "ADD BIKES", add_path, class:"navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "ADD A BIKE", new_bike_path, class:"navbar-wagon-item navbar-wagon-link" %>
     <!-- <a href="#" class="btn-medium">SEARCH BIKES</a> -->
     </div>
     <div>
       <%= link_to "SEARCH BIKES", search_path, class:"btn-medium" %>
     <!-- <a href="#" class="btn-medium">SEARCH BIKES</a> -->
     </div>
+    <div>
+      <%= link_to "SETTINGS", search_path, class:"btn-medium-2" %>
+    </div>
+
     <!-- Profile picture with dropdown list -->
     <div class="navbar-wagon-item">
       <div class="dropdown">

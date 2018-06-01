@@ -30,7 +30,7 @@ Bike.create!(description: 'Pink city cruiser',
   user: user,
   remote_photo_url: './app/assets/images/bike4.jpg')
 
-Bike.create!(description: 'Pink city cruiser',
+Bike.create!(description: 'Great Bike for Women',
   neighborhood: 2,
   price_per_day: 71,
   size: 2,
@@ -38,7 +38,7 @@ Bike.create!(description: 'Pink city cruiser',
   user: user,
   remote_photo_url: './app/assets/images/bike5.jpg')
 
-Bike.create!(description: 'Pink city cruiser',
+Bike.create!(description: 'Original Sheen Bike',
   neighborhood: 3,
   price_per_day: 53,
   size: 2,
@@ -46,7 +46,7 @@ Bike.create!(description: 'Pink city cruiser',
   user: user,
   remote_photo_url: './app/assets/images/bike6.jpg')
 
-Bike.create!(description: 'Pink city cruiser',
+Bike.create!(description: 'The fastest Bike in Tokyo',
   neighborhood: 4,
   price_per_day: 44,
   size: 2,
@@ -54,7 +54,7 @@ Bike.create!(description: 'Pink city cruiser',
   user: user,
   remote_photo_url: './app/assets/images/bike7.jpg')
 
-Bike.create!(description: 'Pink city cruiser',
+Bike.create!(description: 'Family-bike',
   neighborhood: 5,
   price_per_day: 63,
   size: 2,

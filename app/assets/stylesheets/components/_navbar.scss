@@ -24,7 +24,7 @@
 
 /* button */
 
-.btn-medium {
+.btn-medium-2 {
   color: #999999;
   border: 1px solid #999999;
   padding: 10px 15px;
@@ -32,10 +32,26 @@
   font-weight: lighter;
   opacity: 0.6;
 }
-.btn-medium:hover {
+.btn-medium-2:hover {
   opacity: 1;
   text-decoration: none;
   color: #999999;
+}
+
+.btn-medium {
+  color: #00E8CB;
+  border: 1px solid #00E8CB;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  MARGIN-RIGHT: 30PX;
+}
+.btn-medium:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: #FA8E8C;
+  border: 1px solid #FA8E8C;
 }
 
 /* Right section */
@@ -57,8 +73,11 @@
   font-size: 14px;
 }
 .navbar-wagon-link:hover {
-  color: #da552f;
-  text-decoration: underline;
+  border-bottom: 1px solid #000;
+  padding-bottom: 3px;
+  text-decoration: none;
+  color: #616668;
+
 }
 
 /* Dropdown menu */
@@ -91,3 +110,5 @@
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
 }
+
+

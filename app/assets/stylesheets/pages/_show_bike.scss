@@ -13,7 +13,6 @@
   flex-direction: column;
 }
 
-
 .individual_card {
   height: 400px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
@@ -32,25 +31,39 @@
 }
 
 .bike-price h2 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  margin-top: 1px;
+  font-size: 20px;
+}
+
+.individual-bike-price h2 {
   margin-top: 1px;
   font-size: 20px;
 }
 
 .bike-neighborhood h2 {
-  font-size: 20px;
+  position: absolute;
   margin-bottom: 10px;
-
+  top: 10px;
+  left: 10px;
+  margin-top: 1px;
+  font-size: 20px;
 }
-
 
 .bike-size h2 {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.bike-description p {
-  color: #8A786E;
+.bike-description {
+  color: white;
   font-size: 20px;
+  position: absolute;
+  top: -165px;
+  left: 10px;
+
 }
 
 .fullprice h2 {
@@ -86,6 +99,63 @@
   background-color: grey;
   color: white;
 }
+
+.unavailable-bike {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.flip-container{
+  position: relative;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+
+  .flip-card{
+    height: 175px;
+    position:relative;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    background-size: cover !important;
+    background-position: center;
+    color: white;
+    margin:30px;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px #272822;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    &:hover{
+      transform: rotateY( 180deg );
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+    }
+
+    div{
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+
+    .flip-front-card{
+      position:relative;
+      z-index: 2;
+      width:200px;
+      height:175px;
+    }
+
+    .flip-reverse-card{
+      position:relative;
+      transform: rotateX( 180deg );
+      -webkit-transform: rotateX(180deg);
+      -moz-transform: rotateX(180deg);
+      transform: rotateY( 180deg );
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+    }
+  }
+
+}
+
 
 // .card-price {
 //   position: absolute;

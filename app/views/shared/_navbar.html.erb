@@ -24,6 +24,17 @@
       <%= link_to "SEARCH BIKES", search_path, class:"btn-medium" %>
     <!-- <a href="#" class="btn-medium">SEARCH BIKES</a> -->
     </div>
+
+    <% if user_signed_in? %>
+      <div>
+      <%= link_to 'LOGOUT', destroy_user_session_path, method: :delete, class:"btn-medium-2"  %>
+      </div>
+    <% else %>
+      <div>
+      <%= link_to 'LOGIN', new_user_session_path, class:"btn-medium-2"   %>
+      </div>
+    <% end %>
+
     <!-- Profile picture with dropdown list -->
     <div class="navbar-wagon-item">
       <div class="dropdown">

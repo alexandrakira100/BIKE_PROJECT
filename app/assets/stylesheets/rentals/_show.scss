@@ -4,12 +4,13 @@
 }
 
 .rental-banner h1 {
-font-size: 35px;
+font-size: 20px;
+padding: 35px;
 }
 
 
 .rental-banner h2 {
-font-size: 25px;
+font-size: 15px;
 }
 
 .rental {
@@ -38,19 +39,16 @@ font-size: 25px;
 }
 
 .btn_danger {
-  background-color: #56857C;
-  color: white;
-  font-size: 18px;
-}
-
-.btn_danger:hover {
-  background-color: #56857C;
-  color: #ECECEC;
-  font-size: 18px;
+  color: #EB5E55;
+  border: 1px solid #EB5E55;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
 }
 
 .button {
-margin-left: 375px;
+margin-left: 390px;
 margin-bottom: 70px;
 }
 

@@ -4,6 +4,7 @@ class Bike < ApplicationRecord
 
   validates :description, presence: true
   validates :photo, presence: true
+
   validates :size, presence: true
   validates :price_per_day, presence: true
   validates :neighborhood, presence: true

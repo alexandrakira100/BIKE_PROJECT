@@ -1,0 +1,45 @@
+.rental-banner {
+  text-align: center;
+  margin: auto 0;
+}
+
+h1 {
+font-size: 35px;
+}
+
+.photo {
+border-radius: 35px;
+}
+
+.entry {
+  display: flex;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  justify-content: space-around;
+}
+
+
+.all-rentals {
+  margin-top: 45px;
+}
+
+.btn_danger {
+  background-color: #56857C;
+  color: white;
+  font-size: 18px;
+  justify-content: center;
+
+}
+
+.btn_danger:hover {
+  background-color: #56857C;
+  color: #ECECEC;
+  font-size: 18px;
+}
+
+.button {
+margin-left: 375px;
+margin-bottom: 70px;
+}

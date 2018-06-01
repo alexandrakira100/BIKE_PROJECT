@@ -8,7 +8,7 @@
 <div class="container all-rentals">
   <% @rentals.each do |rental| %>
 
-  <div class="container rental">
+  <div class="rental">
       <div class="rental-photo">
     <ul style="list-style-type:none">
     <li><%= cl_image_tag(rental.bike.photo, width: '200px') %></li>

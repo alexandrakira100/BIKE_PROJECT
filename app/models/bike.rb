@@ -4,7 +4,7 @@ class Bike < ApplicationRecord
   validates :photo, presence: true
   mount_uploader :photo, PhotoUploader
   enum size: [:small, :medium, :large]
-  enum neighborhood: [:Shibuya, :Shinjuku, :Ginza, :Omotesando, :Asakusa, :Harajuko, :Meguro, :Roppongi]
+  enum neighborhood: [:Shibuya, :Shinjuku, :Ginza, :Omotesando, :Asakusa, :Harajuku, :Meguro, :Roppongi]
   validates :size, presence: true
   validates :price_per_day, presence: true
 

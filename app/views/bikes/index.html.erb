@@ -1,20 +1,26 @@
-<div class="container">
-  <div class="row">
-    <% @bikes.each do |bike| %>
-      <div class="col-xs-12 col-sm-4">
-        <%= link_to bike_path(bike.id) do %>
-
-          <div class="card <%= bike.available_now? ? "available-bike" : "unavailable-bike" %>" style='background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path bike.photo %>)'>
-            <div class="card-category"></div>
-
-            <div class="card-description">
-              <h2> <%= bike.price_per_day %>¥ </h2>
-              <p> <%= bike.description %> </p>
+<div class="row">
+  <% @bikes.each do |bike| %>
+    <div class="col-xs-12 col-sm-4">
+      <%= link_to bike_path(bike.id) do %>
+        <div class="flip-container <%= bike.available_now? ? "available-bike" : "unavailable-bike" %>">
+          <div class="flip-card" style='background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path bike.photo %>)'>
+            <div class="flip-front-card">
+              <div class="bike-price">
+                <h2> <%= bike.price_per_day %>¥ per day</h2>
+              </div>
+              <div class="bike-neighborhood">
+                <h2> <%= bike.neighborhood %> </h2>
+              </div>
+            </div>
+            <div class="flip-reverse-card">
+              <div class="bike-description">
+                <p> <%= bike.description %></p>
+              </div>
             </div>
           </div>
-        <% end %>
-      </div>
-    <% end %>
-  </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
 </div>
 

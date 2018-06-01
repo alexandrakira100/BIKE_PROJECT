@@ -22,10 +22,11 @@
         <legend><span class="number">3</span> LOCATION DESCRIPTION</legend>
         <h2>Neighborhood</h2>
         <div class="form-group">
-          <%= f.input :neighborhood, collection: Bike::NEIGHBOURHOODS,label: false %>
+          <%= f.input :neighborhood, collection: Bike.neighborhoods.keys, label: false %>
         </div>
-        
-        <h2>Short description of precise location</h2>
+        <h2>Precise pickup location</h2>
+        <%= f.input :pickup_address, label: false %>
+        <h2>Short description of your bike</h2>
         <div class="form-group">
           <%= f.input :description, as: :text,label: false %>
         </div>
